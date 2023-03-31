@@ -12,7 +12,9 @@
          table{
             width:500px;
             border-collapse: collapse;
+            position: relative;
          }
+
          td,th{
             border:1px  solid black;
             padding:10px;
@@ -24,10 +26,14 @@
           background-color: lightgray;
          }
          thead,tfoot{
-            background-color: gray;
+            background-color: #383838;
             color:white;
          }
-        
+        thead > tr >th{
+         position:sticky;
+         top:-1px;
+         background-color: #383838;
+        }
         tbody > tr:ntr-child(odd)  { 
                background-color: white;
                font-weight: bold;
@@ -35,7 +41,7 @@
                }
 
          tbody > tr:ntr-child(even){
-            background-color: lightgray;
+            background-color:lightgray ;
             text-decoration: underline;
 
          }
