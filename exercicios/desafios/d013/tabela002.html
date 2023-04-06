@@ -5,8 +5,59 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>tabelas 02</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        table{
+            border-collapse: collapse;
+            width: 300px;
+        }
+        td{
+            border: 1px solid black;
+            padding:10px;
+            text-align: center;
+        }
+    </style>
 </head>
 <body>
-    
+    <table>
+        <thead>
+            <tr>
+                <td colspan="6" scope="colgroup">
+                    a
+                </td>
+                <td rowspan="4" scope="colgroup">b</td>
+             
+                
+            </tr>
+            <tr>
+                <td rowspan="4" scope="colgroup">c</td>
+                <td>d</td>
+                <td>e</td>
+                 <td colspan="1">f</td>
+                
+
+            </tr>
+            <tr>
+
+                <td >
+                    g
+                </td>
+                <td colspan="1">h</td>
+                <td>i</td>
+            </tr>
+            <tr>
+
+                <td rowspan="1" scope="colgroup">j</td>
+                <td colspan="1">l</td>
+                <td colspan="1">m</td>
+            </tr>
+            <tr>
+                <td colspan="6">n</td>
+            
+            </tr>
+        </thead>
+    </table>
 </body>
 </html>
