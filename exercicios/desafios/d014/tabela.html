@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>desafio tabela</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        table{
+            border-collapse: collapse;
+            width: 300px;
+        }
+
+           th,td {  
+              border: 1px solid black;
+            padding:10px;
+            text-align: center;
+                 }
+             thead ,tfoot{
+            background-color: #383838;
+            color:white;
+        }
+        tbody > tr:ntr-child(odd)  { 
+               background-color: white;
+               font-weight: bold;
+
+               }
+
+         tbody > tr:ntr-child(even){
+            background-color:lightgray ;
+            text-decoration: underline;
+
+    </style>
+</head>
+<body>
+    <table>
+        <thead>
+            <tr>
+                <td rowspan="2" scope="colgroup">
+                    area
+                </td>
+                <td rowspan="2" scope="colgroup">disciplinas</td>
+               <td colspan="2" scope="colgroup">
+                notas
+               </td>
+                <td rowspan="2" scope="colgroup">media</td>
+            </tr>
+            <tr>
+                <td colspan="1" scope="colgroup">nota1</td>
+                <td colspan="1">nota2</td>
+            </tr>
+            
+           </thead>
+           <tfoot>
+             <tr>
+                <th colspan="4"  scope="row">media de exatas</th>
+                <td class="num"><strong>0.0</strong></td>
+             </tr>
+           </tfoot>
+
+            <tr>
+
+              <th rowspan="4" scope="colgroup">exatas</th>
+                <td >matematica </td>
+                <td>0.0</td>
+                <td>0.0</td>
+                <td>0.0</td>
+            </tr>
+            <tr>
+
+                <td rowspan="1" scope="colgroup">fisica</td>
+                <td colspan="1">0.0 </td>
+                <td colspan="1">0.0</td>
+                <td colspan="1">0.0</td>
+               
+            </tr>
+            <tr>
+                <td colspan="1">quimica</td>
+                <td> 0.0 </td>
+                <td> 0.0 </td>
+                <td> 0.0 </td>
+                
+            </tr>
+            <tr> 
+                <td colspan="1">biologia</td>
+                <td> 0.0 </td>
+                <td> 0.0 </td>
+                <td> 0.0 </td>
+                </tr>
+                
+                <tr></tr>
+    </table>
+</body>
+</html>
