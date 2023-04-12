@@ -29,10 +29,12 @@
 
                }
 
-         tbody > tr:ntr-child(even){
-            background-color:lightgray ;
-            text-decoration: underline;
-
+         tbody > tr:ntr-child(even){    
+           background-color:lightgray ;
+            text-decoration: underline;  
+         }
+        
+        
     </style>
 </head>
 <body>
@@ -54,44 +56,79 @@
             </tr>
             
            </thead>
-           <tfoot>
-             <tr>
-                <th colspan="4"  scope="row">media de exatas</th>
+          
+            <tbody>
+                <tr>
+                  <th rowspan="4" scope="colgroup">exatas</th>
+                    <td >matematica </td>
+                    <td>0.0</td>
+                    <td>0.0</td>
+                    <td>0.0</td>
+                </tr>
+                <tr>
+                    <td rowspan="1" scope="colgroup">fisica</td>
+                    <td colspan="1">0.0 </td>
+                    <td colspan="1">0.0</td>
+                    <td colspan="1">0.0</td>
+                
+                </tr>
+                <tr>
+                    <td colspan="1">quimica</td>
+                    <td> 0.0 </td>
+                    <td> 0.0 </td>
+                    <td> 0.0 </td>
+                
+                </tr>
+                <tr>
+                    <td colspan="1">biologia</td>
+                    <td> 0.0 </td>
+                    <td> 0.0 </td>
+                    <td> 0.0 </td>
+                    </tr>
+
+<br>
+    
+                        <tr  >
+                            <td colspan="4"  scope="row">media de exatas</td>
+                            <td class="num"><strong>0.0</strong></td>
+                         </tr>
+    
+    
+</br>
+        
+                    <tr>
+                         <th rowspan="4" scope="colgroup" >humanas
+                            </th>
+                        <td>historia</td>
+                        <td>0.0</td>
+                        <td>0.0</td>
+                        <td>0.0</td>
+                    </tr>
+                    <tr>
+                        <td>geogragrafia
+                            </td>
+                        <td>0.0</td>
+                        <td>0.0</td>
+                        <td>0.0</td>
+                    </tr>
+               
+            </tbody>
+
+                 <tfoot>
+    
+
+
+            <tr>
+                <td colspan="4"  scope="row" >
+                    media de humanas
+                </td>
                 <td class="num"><strong>0.0</strong></td>
              </tr>
+            
            </tfoot>
-
-            <tr>
-
-              <th rowspan="4" scope="colgroup">exatas</th>
-                <td >matematica </td>
-                <td>0.0</td>
-                <td>0.0</td>
-                <td>0.0</td>
-            </tr>
-            <tr>
-
-                <td rowspan="1" scope="colgroup">fisica</td>
-                <td colspan="1">0.0 </td>
-                <td colspan="1">0.0</td>
-                <td colspan="1">0.0</td>
-               
-            </tr>
-            <tr>
-                <td colspan="1">quimica</td>
-                <td> 0.0 </td>
-                <td> 0.0 </td>
-                <td> 0.0 </td>
-                
-            </tr>
-            <tr> 
-                <td colspan="1">biologia</td>
-                <td> 0.0 </td>
-                <td> 0.0 </td>
-                <td> 0.0 </td>
-                </tr>
-                
-                <tr></tr>
+            
+           
     </table>
 </body>
+
 </html>
